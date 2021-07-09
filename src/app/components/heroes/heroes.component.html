@@ -1,0 +1,33 @@
+
+        <div class="col" *ngFor="let heroe">
+            <div *ngFor="let heroe of heroes" class="card" style="width: 18rem;" >
+                <img [src]="heroe.img" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{heroe.nombre}}</h5>
+                  <p class="card-text">{{heroe.bio}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    
