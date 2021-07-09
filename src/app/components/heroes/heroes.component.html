@@ -1,7 +1,8 @@
 
-        <div class="col" *ngFor="let heroe">
-            <div *ngFor="let heroe of heroes" class="card" style="width: 18rem;" >
-                <img [src]="heroe.img" class="card-img-top" alt="...">
+        <!-- <div class="col">
+          <div class="row">
+            <div *ngFor="let heroe of heroes; let i=index" class="card" style="width: 18rem;" >
+                <img src={{heroe.img}} class="card-img-top" >
                 <div class="card-body">
                   <h5 class="card-title">{{heroe.nombre}}</h5>
                   <p class="card-text">{{heroe.bio}}</p>
@@ -16,16 +17,33 @@
                   <a href="#" class="card-link">Another link</a>
                 </div>
               </div>
+            </div>
 
 
 
 
+        </div> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6" *ngFor="let heroe of heroes; let i=index">
+              
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src={{heroe.img}} alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{heroe.nombre}}</h5>
+                    <p class="card-text">{{heroe.bio}}</p>
+                    <p class="card-text"> <strong>{{heroe.casa}}</strong></p>
+                  </div>
+                </div>
+                
+          
+          
+            </div>
+          </div>
 
         </div>
 
-
-
-
+        
 
 
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroesService } from 'src/app/services/heroes.service';
+import { NgForOf } from '@angular/common';
 
 
 @Component({
@@ -9,10 +10,10 @@ import { HeroesService } from 'src/app/services/heroes.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes: any = {};
+  heroes: any = [];
   constructor(private servicioHeroes: HeroesService) {
     this.heroes = servicioHeroes.getHeroes();
-    console.log(this.heroes);
+    console.log(this.heroes['0']);
   }
 
 
